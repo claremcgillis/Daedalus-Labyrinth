@@ -1,4 +1,4 @@
-# Maze-Runners
+## Maze-Runners
 # Personnel
    Clare McGillis and Audrey Soo
 
