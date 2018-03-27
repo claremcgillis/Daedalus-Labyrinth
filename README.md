@@ -1,4 +1,6 @@
 # Maze-Runners
+# Personnel
+   Clare McGillis and Audrey Soo
 
 # Definition of a Maze:
    maze grid with barriers
