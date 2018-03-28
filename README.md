@@ -1,4 +1,4 @@
-   # Personnel
+# Personnel
    Clare McGillis and Audrey Soo
 
 # Problem:
@@ -16,7 +16,7 @@
    The explorer is at the treasure
 
 # English or pseudocode description of algorithm
-   move in all directions possible
+   move in all directions possible (North, South, East, West)
    
    if person is not at a dead end
    
