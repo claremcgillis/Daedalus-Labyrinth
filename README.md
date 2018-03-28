@@ -13,12 +13,13 @@
      find one path through a maze starting one step closer to the treasure ending at the treasure without reaching any stepping stone more than once
 
 # Base Case
-   The explorer is at the treasure
+   When there is nowhere else to go
 
 # English or pseudocode description of algorithm
-   move in all directions possible (North, South, East, West)
+   if explorer is on a valid stepping stone:
+   move in all directions possible (up, down, left, right)
    
-   if person is not at a dead end
+   if person is not at a dead end (on a valid stepping stone, but cant make another step)
    
       invoke abstraction
       
