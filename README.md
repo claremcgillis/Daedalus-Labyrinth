@@ -1,4 +1,4 @@
-# Personnel
+   # Personnel
    Clare McGillis and Audrey Soo
 
 # Problem:
@@ -27,8 +27,16 @@
 # class(es), with fields and methods
 
 # version*n* wish list
-
+   - All possible paths to the treasure
+   - The shortest path to the treasure
+   - Reach multiple treasures?
 # version *0* wishlist
    check for if a move is possible -- boolean
    array of moves represented by integers
    integer representing how many moves done
+   
+   Types of paths:
+   - straight line
+   - simple one way path
+   - paths that have loops
+   
