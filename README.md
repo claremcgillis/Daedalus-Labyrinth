@@ -17,8 +17,11 @@
 
 # English or pseudocode description of algorithm
    move in all directions possible
+   
    if person is not at a dead end
+   
       invoke abstraction
+      
    move back
 
 # class(es), with fields and methods
