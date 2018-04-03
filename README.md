@@ -4,7 +4,9 @@
 # Problem:
    To find one path through a maze starting at a designated beginning ending at the treasure without reaching any stepping       
    stone more than once.
-  
+   
+   [EDIT] Returns a solution that represents a path through the maze starting at a designated beginning, ending at the treasure without reaching any stepping stone more than once.
+   
 # Recursive Abstraction
    When I am asked to 
    find one path through a maze starting at a designated beginning ending at the treasure without reaching any stepping stone more than once,
