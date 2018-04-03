@@ -16,6 +16,8 @@
 
 # Base Case
    When there is nowhere else to go
+   
+   [EDIT] When the explorer has reached the treasure or has no other stepping stone to travel.
 
 # English or pseudocode description of algorithm
    if explorer is on a valid stepping stone:
