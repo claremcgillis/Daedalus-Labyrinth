@@ -12,7 +12,7 @@
    find one path through a maze starting at a designated beginning ending at the treasure without reaching any stepping stone more than once,
       
    The recursive abstraction can
-     find one path through a maze starting one step closer to the treasure ending at the treasure without reaching any stepping stone more than once
+     find one path through a maze starting one step further from the start ending at the treasure without reaching any stepping stone more than once
 
 # Base Case
    When there is nowhere else to go
