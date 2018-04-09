@@ -30,8 +30,24 @@
    move back
 
 # class(es), with fields and methods
+   user class
+      moveTest() // moves the explorer and tests the legality of the move
+      dropTest() // 
+   maze class
+      explorer
+      treasure
+      walls
+      directions (north, east, south, west)
+      move() // moves explorer
+      checkIfLegal() // is move legal?
+      changingthepath() // changes the element in the position the explorer is on
+   maze solver class
+   
+   displayer
+      
+   
 
-# version*n* wish list
+# version *n* wish list
    - All possible paths to the treasure
    - The shortest path to the treasure
    - Reach multiple treasures?
