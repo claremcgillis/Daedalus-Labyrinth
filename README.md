@@ -14,6 +14,13 @@
    The recursive abstraction can
      find one path through a maze starting one step further from the start ending at the treasure without reaching any stepping stone more than once
 
+[EDIT] 
+When I am asked to 
+   find one path that takes n steps through a maze starting at a designated beginning ending at the treasure without reaching any stepping stone more than once,
+      
+   The recursive abstraction can
+     find one path that takes n - 1 steps through a maze starting one step further from the start ending at the treasure without reaching any stepping stone more than once
+
 # Base Case
    When there is nowhere else to go
    
