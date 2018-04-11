@@ -35,6 +35,16 @@ When I am asked to
       invoke abstraction
       
    move back
+   
+   [EDIT]
+   Move explorer one unit in all four directions
+   If the explorer is on a treasure,
+      record the path
+   else if the explorer is on a wall,
+      invoke the recursive abstraction on the last snapshot
+   else (the explorer is on a stepping stone)
+      record the current path with a snapshot
+      invoke the recursive abstraction on the current snapshot
 
 # class(es), with fields and methods
    user class
