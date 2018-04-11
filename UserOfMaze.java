@@ -155,6 +155,8 @@ public class UserOfMaze {
     private static void snapshotDemo( Maze candidate) {
 
         Maze snapshot = new Maze(candidate);
+	    
+	candidate.go(2);
 
 	//	 throw new java.lang.RuntimeException(
 	//     "Write code to take a snapshot of @candidate. "
