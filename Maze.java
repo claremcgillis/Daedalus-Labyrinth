@@ -89,14 +89,10 @@ public class Maze {
 
         // Copy the explorer's position (code by Holmes is asserted to work)
         explorerPosition = new Vector( old.explorerPosition);
-	rankCount = old.rankCount;
-	for (int row = 0; row < MAX_RANKS + 1; row ++) {
-	    for (int col = 0; col < old.maze[0].length + 1; col ++) {
-		maze[row][col] = old.maze[row][col];
-	    }
-	}
 
-	// throw new java.lang.RuntimeException(
+		rankCount = old.rankCount;
+		maze = old.maze.clone();
+        //throw new java.lang.RuntimeException(
         //    "Write code to copy the maze[][] array and rankCount.");
     }
 
