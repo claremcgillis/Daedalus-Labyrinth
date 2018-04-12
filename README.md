@@ -68,6 +68,8 @@ When I am asked to
    - All possible paths to the treasure
    - The shortest path to the treasure
    - Reach multiple treasures?
+   
+   - make a more effecient UserOfMazeSolver that doesnt involve using the commandline to represent the file path of maze text files
 # version *0* wishlist
    check for if a move is possible -- boolean
    array of moves represented by integers
