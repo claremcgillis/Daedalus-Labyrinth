@@ -1,4 +1,4 @@
-[0]/** 
+/** 
 tests MazeSolver
 Command line requires the file path of the text file which contains the maze.
 */
