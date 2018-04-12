@@ -1,9 +1,9 @@
-/** 
+ /** 
 tests MazeSolver
 Command line requires the file path of the text file which contains the maze.
 */
 public class UserOfMazeSolver {
-  public static void main(String[] commandLine) {
+  public static void main(String[] commandLine)throws java.io.FileNotFoundException  {
               
       MazeSolver testingMaze = new MazeSolver(commandLine[0],
       																				Integer.parseInt( commandLine[1]), 
