@@ -24,4 +24,11 @@ public class MazeSolver {
 		return inProgress.toString();
 	}
 
+    public void pathFinder() {
+	if (inProgress.explorerIsOnA() == 0) { // Explorer on treasure
+	    isMazeSolved = true;
+	}
+    }
+    
+
 }
