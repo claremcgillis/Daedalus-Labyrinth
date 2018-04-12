@@ -8,13 +8,17 @@ without reaching any stepping stone more than once.
 */
 public class MazeSolver {
 	private boolean isMazeSolved;
+	public Maze inProgress;
 	public MazeSolver(String sourceFilename, int explorerRank, int explorerFile) throws java.io.FileNotFoundException{ 
   		 
-  		Maze inProgress = new Maze(sourceFilename, explorerRank, explorerFile);
+  		inProgress = new Maze(sourceFilename, explorerRank, explorerFile);
   }
   
   public boolean getIsMazeSolved() {
   	return isMazeSolved;
     }
+	
+	public String toString() {
+		return inProgress.toString();
 
 }
