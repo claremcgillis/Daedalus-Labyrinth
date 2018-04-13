@@ -30,7 +30,6 @@ public class MazeSolver {
 	if (inProgress.explorerIsOnA() == 0)  // Explorer on treasure
 	    {
       isMazeSolved = true;
-      break;
       }
   else if (inProgress.explorerIsOnA() == 1) // Explorer in a wall 
   {
@@ -41,8 +40,9 @@ public class MazeSolver {
   		lastSnap = new Maze(inProgress);
   		for (int i = 0; i < 4; i++) {
       	inProgress.dropA(1); // makes the stepping stone a wall
-      	inProgress.go(Math.pow(2.0, i));
+      	inProgress.go(Math.pow(2, i));
         pathFinder();
+	if (isMazeSolved()) break;
       }
   }
   }
