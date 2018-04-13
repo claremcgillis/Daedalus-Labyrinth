@@ -16,6 +16,7 @@ public class MazeSolver {
   		 
   		inProgress = new Maze(sourceFilename, explorerRank, explorerFile);
 		pathFinder();
+		System.out.println(isMazeSolved);
 	}
 
 	public boolean getIsMazeSolved() {
