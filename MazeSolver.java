@@ -31,10 +31,12 @@ public class MazeSolver {
       isMazeSolved = true;
       break;
       }
-  else if (inProgress.explorerIsOnA() == 1) // Explorer in a wall {
+  else if (inProgress.explorerIsOnA() == 1) // Explorer in a wall 
+  {
   		inProgress = lastSnap;
   }
-  else if (inProgress.explorerIsOnA() == 2) // Explorer is on a stepping stone {
+  else if (inProgress.explorerIsOnA() == 2) // Explorer is on a stepping stone 
+  {
   		Maze lastSnap = new Maze(inProgress);
   		for (int i = 0; i < 4; i++) {
       	inProgress.dropA(1); // makes the stepping stone a wall
