@@ -41,7 +41,7 @@ public class MazeSolver {
   		lastSnap = new Maze(inProgress);
   		for (int i = 0; i < 4; i++) {
       	inProgress.dropA(1); // makes the stepping stone a wall
-      	inProgress.go(Math.pow(2,i));
+      	inProgress.go(Math.pow(2.0, i));
         pathFinder();
       }
   }
