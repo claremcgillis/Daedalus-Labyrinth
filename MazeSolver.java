@@ -42,7 +42,7 @@ public class MazeSolver {
       	inProgress.dropA(1); // makes the stepping stone a wall
       	inProgress.go(Math.pow(2, i));
         pathFinder();
-	if (isMazeSolved()) break;
+	if (isMazeSolved) break;
       }
   }
   }
