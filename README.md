@@ -80,3 +80,4 @@ When I am asked to
    - simple one way path
    - paths that have loops
    
+# known bugs
