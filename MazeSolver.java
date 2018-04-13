@@ -1,3 +1,4 @@
+
 /**
 Pre condition: given a text file with a maze and placement of explorer
 
@@ -14,6 +15,7 @@ public class MazeSolver {
 	public MazeSolver(String sourceFilename, int explorerRank, int explorerFile) throws java.io.FileNotFoundException{ 
   		 
   		inProgress = new Maze(sourceFilename, explorerRank, explorerFile);
+		pathFinder();
 	}
 
 	public boolean getIsMazeSolved() {
