@@ -1,4 +1,3 @@
-
 /**
 Pre condition: given a text file with a maze and placement of explorer
 
@@ -15,9 +14,6 @@ public class MazeSolver {
 	public MazeSolver(String sourceFilename, int explorerRank, int explorerFile) throws java.io.FileNotFoundException{ 
   		 
   		inProgress = new Maze(sourceFilename, explorerRank, explorerFile);
-		System.out.println("testing. created inProgress");
-		pathFinder();
-		System.out.println("Finished pathFinder. status of treasure: " + isMazeSolved);
 	}
 
 	public boolean getIsMazeSolved() {
@@ -28,14 +24,27 @@ public class MazeSolver {
 		return inProgress.toString();
 	}
 
-    public void pathFinder() {
-	if (inProgress.explorerIsOnA() == 0) { // Explorer on treasure
-	    isMazeSolved = true;
-		System.out.println(isMazeSolved);
-	}
-	else{
-		System.out.println("Explorer not on treasure");
-	}
+  public void pathFinder() {
+  	
+	if (inProgress.explorerIsOnA() == 0)  // Explorer on treasure
+	    {
+      isMazeSolved = true;
+      break;
+      }
+  if else (inProgress.explorerIsOnA() == 1) // Explorer in a wall {
+  		inProgress = lastSnap;
+  }
+  if else (inProgress.explorerIsOnA() == 2) // Explorer is on a stepping stone {
+  		Maze lastSnap = new Maze(inProgress);
+  		for (int i = 0; i < 4; i++) {
+      	inProgress.dropA(1); // makes the stepping stone a wall
+      	inProgress.go(Math.exp(2,i));
+        inProgress.pathFinder();
+      }
+  }
+  }
+      
+      
     }
     
 
