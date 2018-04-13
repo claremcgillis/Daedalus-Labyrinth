@@ -15,9 +15,9 @@ public class MazeSolver {
 	public MazeSolver(String sourceFilename, int explorerRank, int explorerFile) throws java.io.FileNotFoundException{ 
   		 
   		inProgress = new Maze(sourceFilename, explorerRank, explorerFile);
-		System.out.println("testing");
+		System.out.println("testing. created inProgress");
 		pathFinder();
-		System.out.println(isMazeSolved);
+		System.out.println("Finished pathFinder. status of treasure: " + isMazeSolved);
 	}
 
 	public boolean getIsMazeSolved() {
@@ -32,6 +32,9 @@ public class MazeSolver {
 	if (inProgress.explorerIsOnA() == 0) { // Explorer on treasure
 	    isMazeSolved = true;
 		System.out.println(isMazeSolved);
+	}
+	else{
+		System.out.println("Explorer not on treasure");
 	}
     }
     
