@@ -9,6 +9,7 @@ without reaching any stepping stone more than once.
 public class MazeSolver {
 	private boolean isMazeSolved;
 	public Maze inProgress;
+	public Maze lastSnap;
 	
 	
 	public MazeSolver(String sourceFilename, int explorerRank, int explorerFile) throws java.io.FileNotFoundException{ 
@@ -25,7 +26,6 @@ public class MazeSolver {
 	}
 
   public void pathFinder() {
-	  Maze lastSnap;
   	
 	if (inProgress.explorerIsOnA() == 0)  // Explorer on treasure
 	    {
