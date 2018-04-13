@@ -80,3 +80,5 @@ When I am asked to
    - simple one way path
    - paths that have loops
    
+# known bugs
+ - Only the base case works, when you place the explorer on the treasuer to begin with
