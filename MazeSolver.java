@@ -25,6 +25,7 @@ public class MazeSolver {
 	}
 
   public void pathFinder() {
+	  Maze lastSnap;
   	
 	if (inProgress.explorerIsOnA() == 0)  // Explorer on treasure
 	    {
@@ -37,11 +38,11 @@ public class MazeSolver {
   }
   else if (inProgress.explorerIsOnA() == 2) // Explorer is on a stepping stone 
   {
-  		Maze lastSnap = new Maze(inProgress);
+  		lastSnap = new Maze(inProgress);
   		for (int i = 0; i < 4; i++) {
       	inProgress.dropA(1); // makes the stepping stone a wall
       	inProgress.go(Math.exp(2,i));
-        inProgress.pathFinder();
+        pathFinder();
       }
   }
   }
