@@ -21,12 +21,13 @@ public class MazeSolver {
 	}
 	
 	public String toString() {
-		return isMazeSolved + System.out.println() + inProgress.toString();
+		return inProgress.toString();
 	}
 
     public void pathFinder() {
 	if (inProgress.explorerIsOnA() == 0) { // Explorer on treasure
 	    isMazeSolved = true;
+		System.out.println(isMazeSolved);
 	}
     }
     
