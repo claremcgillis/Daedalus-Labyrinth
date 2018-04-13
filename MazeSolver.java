@@ -21,7 +21,7 @@ public class MazeSolver {
 	}
 	
 	public String toString() {
-		return inProgress.toString();
+		return isMazeSolved + System.out.println() + inProgress.toString();
 	}
 
     public void pathFinder() {
