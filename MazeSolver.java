@@ -39,10 +39,13 @@ public class MazeSolver {
   		lastSnap = new Maze(inProgress);
   		for (int numDir : DIRECTIONS) {
 			lastSnap = new Maze(inProgress);
-    		  	inProgress.dropA(1); // makes the stepping stone a wall
+    		  	inProgress.dropA(inProgress.WALL); // makes the stepping stone a wall
      		 	inProgress.go(numDir);
-      			pathFinder(inProgress);
-      }
+      			pathFinder(inProgress);}
+		inProgress.dropA(inProgress.WALL); 
+		pathFinder(inProgress);
+		
+		
   }
   }
       
