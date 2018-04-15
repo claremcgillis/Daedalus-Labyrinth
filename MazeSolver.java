@@ -15,7 +15,7 @@ public class MazeSolver {
 	public MazeSolver(String sourceFilename, int explorerRank, int explorerFile) throws java.io.FileNotFoundException{ 
   		 
   		inProgress = new Maze(sourceFilename, explorerRank, explorerFile);
-		pathfinder(inProgress);
+		pathFinder(inProgress);
 	}
 
 	public boolean getIsMazeSolved() {
