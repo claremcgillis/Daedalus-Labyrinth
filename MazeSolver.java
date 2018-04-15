@@ -1,4 +1,4 @@
-/**
+ /**
 Pre condition: given a text file with a maze and placement of explorer
 
 Post condition: returns a boolean value of whether there is a solution 
@@ -38,9 +38,9 @@ public class MazeSolver {
   else if (inProgress.explorerIsOnA() == 2) // Explorer is on a stepping stone 
   {
   	lastSnap = new Maze(inProgress);
-  	for () {
+  	for (int numDir : Directions) {
       	inProgress.dropA(1); // makes the stepping stone a wall
-      	inProgress.go((int)(Math.pow(2, i)));
+      	inProgress.go(numDir);
         pathFinder();
 	if (isMazeSolved) break;
       }
