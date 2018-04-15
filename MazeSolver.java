@@ -27,7 +27,7 @@ public class MazeSolver {
 	}
 
   public boolean pathFinder(Maze inProgress) {
-	System.out.println(inProgress);
+	//System.out.println(inProgress);
 	if (inProgress.explorerIsOnA() == inProgress.TREASURE)  // Explorer on treasure
       		return true;
   	else if (inProgress.explorerIsOnA() == inProgress.WALL) // Explorer in a wall 
