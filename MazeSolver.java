@@ -31,7 +31,7 @@ public class MazeSolver {
 	if (inProgress.explorerIsOnA() == inProgress.TREASURE)  // Explorer on treasure
       		return true;
   	else if (inProgress.explorerIsOnA() == inProgress.WALL) // Explorer in a wall 
-	  {
+	  {return false;
  	 }
   	else if (inProgress.explorerIsOnA() == inProgress.STEPPING_STONE) // Explorer is on a stepping stone 
          {
