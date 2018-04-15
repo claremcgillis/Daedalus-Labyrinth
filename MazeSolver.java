@@ -35,20 +35,21 @@ public class MazeSolver {
 		return false;
  	 }
   	else if (inProgress.explorerIsOnA() == inProgress.STEPPING_STONE) // Explorer is on a stepping stone 
-  {
+         {
   		lastSnap = new Maze(inProgress);
   		for (int numDir : DIRECTIONS) {
 			lastSnap = new Maze(inProgress);
     		  	inProgress.dropA(inProgress.WALL); // makes the stepping stone a wall
      		 	inProgress.go(numDir);
-      			pathFinder(inProgress);}
+      			return pathFinder(inProgress);}
 		inProgress.dropA(inProgress.WALL); 
-		pathFinder(inProgress);
+		return pathFinder(inProgress);
 		
 		
-  }
+	  }
+	return false;
   }
       
       
-    }
+}
     
