@@ -28,23 +28,21 @@ public class MazeSolver {
   public boolean pathFinder(Maze inProgress) {
   	Maze lastSnap ;
 	if (inProgress.explorerIsOnA() == inProgress.TREASURE)  // Explorer on treasure
-	    {
-      return true;
-      }
-  else if (inProgress.explorerIsOnA() == inProgress.WALL) // Explorer in a wall 
-  {
+      		return true;
+  	else if (inProgress.explorerIsOnA() == inProgress.WALL) // Explorer in a wall 
+	  {
   		inProgress = lastSnap;
-	  return false;
-  }
-  else if (inProgress.explorerIsOnA() == inProgress.STEPPING_STONE) // Explorer is on a stepping stone 
+		return false;
+ 	 }
+  	else if (inProgress.explorerIsOnA() == inProgress.STEPPING_STONE) // Explorer is on a stepping stone 
   {
-  	lastSnap = new Maze(inProgress);
-  	for (int numDir : DIRECTIONS) {
-		lastSnap = new Maze(inProgress);
-      	inProgress.dropA(1); // makes the stepping stone a wall
-      	inProgress.go(numDir);
-        pathFinder(inProgress);
-	if (isMazeSolved) break;
+  		lastSnap = new Maze(inProgress);
+  		for (int numDir : DIRECTIONS) {
+			lastSnap = new Maze(inProgress);
+    		  	inProgress.dropA(1); // makes the stepping stone a wall
+     		 	inProgress.go(numDir);
+      			pathFinder(inProgress);
+			if (isMazeSolved) break;
       }
   }
   }
