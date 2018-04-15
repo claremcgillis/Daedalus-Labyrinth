@@ -40,7 +40,7 @@ public class MazeSolver {
 			inProgress = new Maze(lastSnap);
     		  	inProgress.dropA(inProgress.WALL); // makes the stepping stone a wall
      		 	inProgress.go(numDir);
-      			if (pathFinder(inProgress) == true) return true;
+      			pathFinder(inProgress);
 		}
 	  }
 return false;  
