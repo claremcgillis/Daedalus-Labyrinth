@@ -42,7 +42,6 @@ public class MazeSolver {
     		  	inProgress.dropA(1); // makes the stepping stone a wall
      		 	inProgress.go(numDir);
       			pathFinder(inProgress);
-			if (isMazeSolved) break;
       }
   }
   }
