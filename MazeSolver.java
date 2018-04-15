@@ -33,7 +33,7 @@ public class MazeSolver {
  	 }
   	else if (inProgress.explorerIsOnA() == inProgress.STEPPING_STONE) // Explorer is on a stepping stone 
          {
-  		lastSnap = new Maze(inProgress);
+  		Maze lastSnap = new Maze(inProgress);
   		for (int numDir : DIRECTIONS) {
 			inProgress = new Maze(lastSnap);
     		  	inProgress.dropA(inProgress.WALL); // makes the stepping stone a wall
