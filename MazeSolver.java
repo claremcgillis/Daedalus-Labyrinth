@@ -9,7 +9,7 @@ without reaching any stepping stone more than once.
 public class MazeSolver {
 	private boolean isMazeSolved;
     public Maze inProgress; // explorer moves on this
-    private final static int[] DIRECTIONS = { inProgress.EAST,inProgress.NORTH, inProgress.SOUTH, inProgress.WEST};
+    private final int[] DIRECTIONS = { inProgress.EAST,inProgress.NORTH, inProgress.SOUTH, inProgress.WEST};
 	
 	
 	public MazeSolver(String sourceFilename, int explorerRank, int explorerFile) throws java.io.FileNotFoundException{ 
@@ -38,7 +38,7 @@ public class MazeSolver {
   else if (inProgress.explorerIsOnA() == 2) // Explorer is on a stepping stone 
   {
   	lastSnap = new Maze(inProgress);
-  	for (int numDir : Directions) {
+  	for (int numDir : DIRECTIONS) {
       	inProgress.dropA(1); // makes the stepping stone a wall
       	inProgress.go(numDir);
         pathFinder();
