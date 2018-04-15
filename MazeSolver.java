@@ -42,8 +42,9 @@ public class MazeSolver {
       			if (pathFinder(inProgress) == true) return true;
 		}
 	  }
-	return false;
+return false;  
   }
+
       
       
 }
