@@ -41,8 +41,10 @@ public class MazeSolver {
     		  	inProgress.dropA(inProgress.WALL); // makes the stepping stone a wall
      		 	inProgress.go(numDir);
       			if (pathFinder(inProgress) == true) break;
+			//if (pathFinder(inProgress) == true) return true;
 		}
-	  }
+	  } 
+System.out.println("Nothing worked");
 return false;  
   }
 
