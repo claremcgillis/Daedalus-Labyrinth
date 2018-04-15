@@ -1,4 +1,4 @@
- /**
+  /**
 Pre condition: given a text file with a maze and placement of explorer
 
 Post condition: returns a boolean value of whether there is a solution 
@@ -25,17 +25,17 @@ public class MazeSolver {
 		return inProgress.toString();
 	}
 
-  public boolean pathFinder() {
+  public boolean pathFinder(Maze inProgress) {
   	
-	if (inProgress.explorerIsOnA() == 0)  // Explorer on treasure
+	if (inProgress.explorerIsOnA() == inProgress.TREASURE)  // Explorer on treasure
 	    {
       isMazeSolved = true;
       }
-  else if (inProgress.explorerIsOnA() == 1) // Explorer in a wall 
+  else if (inProgress.explorerIsOnA() == inProgress.WALL) // Explorer in a wall 
   {
   		inProgress = lastSnap;
   }
-  else if (inProgress.explorerIsOnA() == 2) // Explorer is on a stepping stone 
+  else if (inProgress.explorerIsOnA() == inProgress.STEPPING_STONE) // Explorer is on a stepping stone 
   {
   	lastSnap = new Maze(inProgress);
   	for (int numDir : DIRECTIONS) {
