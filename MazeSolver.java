@@ -41,9 +41,6 @@ public class MazeSolver {
      		 	inProgress.go(numDir);
       			if (pathFinder(inProgress) == true) return true;
 		}
-		inProgress = new Maze(lastSnap);
-		inProgress.dropA(inProgress.WALL); 
-		if (pathFinder(inProgress) == true) return true;
 	  }
 	return false;
   }
