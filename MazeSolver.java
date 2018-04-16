@@ -50,29 +50,7 @@ public class MazeSolver {
 		}
 	return false;
 	  } 
-  }
-	  
-   public void numberOfPaths(Maze inProgress) {
-	
-	if (inProgress.explorerIsOnA() == inProgress.TREASURE)  // Explorer on treasure
-	{
-		numPaths++;
-      		return true;
-   }
-  	else if (inProgress.explorerIsOnA() == inProgress.WALL) // Explorer in a wall 
-	  {return false;}
-  	else if (inProgress.explorerIsOnA() == inProgress.STEPPING_STONE) // Explorer is on a stepping stone 
-         {
-  		Maze lastSnap = new Maze(inProgress);
-  		for (int numDir : DIRECTIONS) {
-			inProgress = new Maze(lastSnap);
-    		  	inProgress.dropA(inProgress.WALL); // makes the stepping stone a wall
-     		 	inProgress.go(numDir);
-      			if (numberOfPaths(inProgress) == true) numPaths++;
-		}
-	}
-	return false;	 
-  }
+ 
 
       
       
