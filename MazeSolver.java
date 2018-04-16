@@ -1,4 +1,4 @@
-   /**
+    /**
 Pre condition: given a text file with a maze and placement of explorer
 
 Post condition: returns a boolean value of whether there is a solution 
@@ -47,7 +47,10 @@ public class MazeSolver {
       			if (pathFinder(inProgress) == true) numPaths++;
 		}
 	  } 
-	 return false;
+	 if(numPaths == 0) return false;
+	  else{
+		return true;
+	  }
 
       
       
