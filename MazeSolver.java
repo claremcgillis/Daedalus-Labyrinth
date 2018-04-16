@@ -16,6 +16,7 @@ public class MazeSolver {
   		 
   		inProgress = new Maze(sourceFilename, explorerRank, explorerFile);
 		System.out.println(pathFinder(inProgress));
+		System.out.println(numberOfPaths(inProgress));
 	}
 
 	public boolean getIsMazeSolved() {
@@ -55,8 +56,7 @@ public class MazeSolver {
       		return true;
    }
   	else if (inProgress.explorerIsOnA() == inProgress.WALL) // Explorer in a wall 
-	  {return false;
- 	 }
+	  {return false;}
   	else if (inProgress.explorerIsOnA() == inProgress.STEPPING_STONE) // Explorer is on a stepping stone 
          {
   		Maze lastSnap = new Maze(inProgress);
@@ -64,14 +64,13 @@ public class MazeSolver {
 			inProgress = new Maze(lastSnap);
     		  	inProgress.dropA(inProgress.WALL); // makes the stepping stone a wall
      		 	inProgress.go(numDir);
-      			if (numberOfPaths(inProgress) == true) return true;
+      			if (numberOfPaths(inProgress) == true) numPaths++;
 		}
 	}
-		
-		
-return false;  
+		 
   }
 
+return false;
       
       
 }
