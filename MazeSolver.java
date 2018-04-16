@@ -1,4 +1,4 @@
-    /**
+/**
 Pre condition: given a text file with a maze and placement of explorer
 
 Post condition: returns a boolean value of whether there is a solution 
@@ -45,7 +45,10 @@ public class MazeSolver {
 			inProgress = new Maze(lastSnap);
     		  	inProgress.dropA(inProgress.WALL); // makes the stepping stone a wall
      		 	inProgress.go(numDir);
-      			if (pathFinder(inProgress) == true) numPaths++;
+      			if (pathFinder(inProgress) == true) {
+				System.out.println("incrementing numPaths... ");
+				numPaths++;
+				System.out.println("numPaths after increment: " + numPaths);
 		}
 	  } 
 	 if(numPaths == 0) return false;
