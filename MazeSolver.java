@@ -35,6 +35,7 @@ public class MazeSolver {
 	//System.out.println(inProgress);
 	if (inProgress.explorerIsOnA() == inProgress.TREASURE)  // Explorer on treasure
 		{System.out.println("Found a treasure!");
+		 numPaths++;
 		return true;}
   	else if (inProgress.explorerIsOnA() == inProgress.WALL) // Explorer in a wall 
 	  {return false;}
@@ -47,7 +48,7 @@ public class MazeSolver {
      		 	inProgress.go(numDir);
       			if (pathFinder(inProgress) == true) {
 				System.out.println("incrementing numPaths... ");
-				numPaths++;
+				//numPaths++;
 				System.out.println("numPaths after increment: " + numPaths);
 			}
 		}
