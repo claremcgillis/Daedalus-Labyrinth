@@ -49,6 +49,7 @@ public class MazeSolver {
 				System.out.println("incrementing numPaths... ");
 				numPaths++;
 				System.out.println("numPaths after increment: " + numPaths);
+			}
 		}
 	  } 
 	 if(numPaths == 0) return false;
