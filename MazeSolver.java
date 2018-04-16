@@ -32,7 +32,7 @@ public class MazeSolver {
 	}
 
   public boolean pathFinder(Maze inProgress) {
-	//System.out.println(inProgress);
+	System.out.println(inProgress);
 	if (inProgress.explorerIsOnA() == inProgress.TREASURE)  // Explorer on treasure
 		{System.out.println("Found a treasure!");
 		 numPaths++;
