@@ -37,8 +37,7 @@ public class MazeSolver {
 	if (inProgress.explorerIsOnA() == inProgress.TREASURE)  // Explorer on treasure
       		return true;
   	else if (inProgress.explorerIsOnA() == inProgress.WALL) // Explorer in a wall 
-	  {return false;
- 	 }
+	  {return false;}
   	else if (inProgress.explorerIsOnA() == inProgress.STEPPING_STONE) // Explorer is on a stepping stone 
          {
   		Maze lastSnap = new Maze(inProgress);
@@ -46,7 +45,7 @@ public class MazeSolver {
 			inProgress = new Maze(lastSnap);
     		  	inProgress.dropA(inProgress.WALL); // makes the stepping stone a wall
      		 	inProgress.go(numDir);
-      			if (pathFinder(inProgress) == true) return true;
+      			if (pathFinder(inProgress) == true) numPaths++;
 		}
 	return false;
 	  } 
