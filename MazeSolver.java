@@ -32,6 +32,7 @@ public class MazeSolver {
 	}
 
   public boolean pathFinder(Maze inProgress) {
+	// outputs true if the explorer is able to find a path to the treasure. In the works of counting the number of paths to the treasure.
 	//System.out.println(inProgress);
 	if (inProgress.explorerIsOnA() == inProgress.TREASURE)  // Explorer on treasure
 		{//System.out.println("Found a treasure!");
