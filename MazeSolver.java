@@ -16,7 +16,6 @@ public class MazeSolver {
   		 
   		inProgress = new Maze(sourceFilename, explorerRank, explorerFile);
 		System.out.println(pathFinder(inProgress));
-		numberOfPaths(inProgress);
 		System.out.println(numPaths);
 	}
 
