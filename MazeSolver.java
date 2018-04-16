@@ -49,10 +49,12 @@ public class MazeSolver {
 		}
 	return false;
 	  } 
+  }
 	  
    public void numberOfPaths(Maze inProgress) {
 	
-	if (inProgress.explorerIsOnA() == inProgress.TREASURE)  // Explorer on treasure{
+	if (inProgress.explorerIsOnA() == inProgress.TREASURE)  // Explorer on treasure
+	{
 		numPaths++;
       		return true;
    }
