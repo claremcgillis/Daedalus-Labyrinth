@@ -10,7 +10,7 @@ public class MazeSolver {
 	private boolean isMazeSolved;
     public Maze inProgress; // explorer moves on this
     private final int[] DIRECTIONS = { inProgress.EAST,inProgress.NORTH, inProgress.SOUTH, inProgress.WEST};
-	
+	private int numPaths;
 	
 	public MazeSolver(String sourceFilename, int explorerRank, int explorerFile) throws java.io.FileNotFoundException{ 
   		 
@@ -24,6 +24,10 @@ public class MazeSolver {
 	
 	public String toString() {
 		return inProgress.toString();
+	}
+	
+	public int getNumPaths(){
+		return numPaths;
 	}
 
   public boolean pathFinder(Maze inProgress) {
@@ -44,8 +48,8 @@ public class MazeSolver {
 		}
 	  } 
 	  
-   public int numberOfPaths(Maze inProgress) {
-	int num;
+   public void numberOfPaths(Maze inProgress) {
+	
 	if (inProgress.explorerIsOnA() == inProgress.TREASURE)  // Explorer on treasure
       		return true;
   	else if (inProgress.explorerIsOnA() == inProgress.WALL) // Explorer in a wall 
