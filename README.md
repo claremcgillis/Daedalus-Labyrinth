@@ -31,7 +31,7 @@ When I am asked to
    move in all directions possible (up, down, left, right)
    
    if person is not at a dead end (on a valid stepping stone, but cant make another step)
-   
+
       invoke abstraction
       
    move back
@@ -68,8 +68,10 @@ When I am asked to
    - All possible paths to the treasure
    - The shortest path to the treasure
    - Reach multiple treasures?
-   
+
+# version *1* wish list
    - make a more effecient UserOfMazeSolver that doesnt involve using the commandline to represent the file path of maze text files
+   
 # version *0* wishlist
    check for if a move is possible -- boolean
    array of moves represented by integers
