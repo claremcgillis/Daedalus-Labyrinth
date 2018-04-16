@@ -47,6 +47,7 @@ public class MazeSolver {
      		 	inProgress.go(numDir);
       			if (pathFinder(inProgress) == true) return true;
 		}
+	return false;
 	  } 
 	  
    public void numberOfPaths(Maze inProgress) {
@@ -67,10 +68,9 @@ public class MazeSolver {
       			if (numberOfPaths(inProgress) == true) numPaths++;
 		}
 	}
-		 
+	return false;	 
   }
 
-return false;
       
       
 }
