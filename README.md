@@ -85,4 +85,4 @@ When I am asked to
    - paths that have loops
    
 # known bugs
- - Only the base case works, when you place the explorer on the treasuer to begin with
+   - returning the number of paths does not work.  It will only find one path to a treasure if one exists
