@@ -46,11 +46,11 @@ public class MazeSolver {
      		 	inProgress.go(numDir);
       			if (pathFinder(inProgress) == true) numPaths++;
 		}
-	return false;
 	  } 
- 
+	 return false;
 
       
       
-}
+	}
     
+}
