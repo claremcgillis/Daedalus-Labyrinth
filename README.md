@@ -82,3 +82,6 @@ When I am asked to
    
 # known bugs
  - Only the base case works, when you place the explorer on the treasuer to begin with
+[EDIT]
+ - explorer has to be placed on a valid step
+ - maze needs to be in the mazes folder
